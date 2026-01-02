@@ -78,12 +78,13 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-TPMXQX2N');
           `}
         </Script>
-
+          <SmoothScrollProvider>
         <InitialLoader>
           <Header />
           {children}
           <Footer />
         </InitialLoader>
+        </SmoothScrollProvider>
       </body>
     </html>
   );
