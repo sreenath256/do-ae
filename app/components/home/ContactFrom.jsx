@@ -5,6 +5,7 @@ import "react-phone-number-input/style.css";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { Globe } from "../../components";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [value, setValue] = useState("");

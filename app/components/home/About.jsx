@@ -27,21 +27,17 @@ const About = () => (
     <div className="md:col-span-2">
       <div className="flex flex-col gap-5">
         {/* description */}
-        {/* <p className="text-white text-2xl sm:text-4xl xl:text-5xl font-medium leading-tight">
+        <p className="text-white text-2xl sm:text-4xl xl:text-5xl font-medium leading-tight">
           Do Studio is more than just a digital marketing agency in Dubai. We're
           a team of strategists, creatives, analysts, and developers passionate
-          about turning ideas into results.
-          <br />{" "}
-          <span className="text-gray-400">
-            Our mission is to empower businesses through intelligent digital
+          about turning ideas into results. Our mission is to empower businesses through intelligent digital
             strategies that lead to measurable growth.
-          </span>
-        </p> */}
-        <ScrollRevealText />
+        </p>
+        {/* <ScrollRevealText /> */}
         {/* description */}
 
         {/* Button */}
-        <button className="!text-sm primary-bg text-black w-fit px-10 py-4 rounded-full">
+        <button className="mt-5 !text-sm primary-bg text-black w-fit px-10 py-4 rounded-full">
           Learn more
         </button>
       </div>

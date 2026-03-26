@@ -10,13 +10,14 @@ const Allservices = [
     id: 1,
     title: "Search Engine Optimization (SEO)",
     image: `https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg`,
-    desc: `DO Studio is your results-driven social media marketing agency in Dubai, dedicated to making your brand impossible to ignore.`,
+        desc: `We help brands rank higher, convert better, and grow faster through smart, results-driven SEO. As an SEO agency in Dubai, we combine local expertise with proven strategies to deliver measurable business growth.`,
+
   },
   {
     id: 2,
     title: "Social Media Marketing",
     image: `https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_1280.jpg`,
-    desc: `We help brands rank higher, convert better, and grow faster through smart, results-driven SEO. As an SEO agency in Dubai, we combine local expertise with proven strategies to deliver measurable business growth.`,
+    desc: `DO Studio is your results-driven social media marketing agency in Dubai, dedicated to making your brand impossible to ignore.`,
   },
   {
     id: 3,
