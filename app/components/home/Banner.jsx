@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import { FiVolume2, FiVolumeX } from "react-icons/fi";
 import { PiSpeakerSimpleLowThin,PiSpeakerSimpleSlashThin } from "react-icons/pi";
 
 const videos = [
