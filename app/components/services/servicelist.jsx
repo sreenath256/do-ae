@@ -89,7 +89,7 @@ const servicelist = () => {
                   src={service.thumbsrc}
                   fill
                   className="w-full h-full object-cover"
-                  alt={service.sertitle}
+                  alt={service.sertitle || "Service item"}
                 />
               </div>
             </div>

@@ -34,35 +34,38 @@ const ServiceData = [
 ];
 
 const Services = ({ service }) => {
+  const heading = service.section3?.heading || service.sertitle;
+  const subServices = service.section3?.services || service.moreservices;
+
   return (
     <>
       <section className="bg-gray-100 text-black p-5 xl:p-10 xl:py-16 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 pb-5 xl:pb-10 ">
           <div className="md:col-span-2 flex flex-col gap-5">
-            <p className="text-2xl xl:text-6xl uppercase">{service.sertitle}</p>
-            <p className="text-xl">{service.serdesc}</p>
+            <p className="text-2xl xl:text-6xl uppercase">{heading}</p>
+            {service.serdesc && <p className="text-xl">{service.serdesc}</p>}
           </div>
         </div>
         <div className=" bg-gradient-to-r from-transparent via-neutral-500 to-transparent h-[1px] w-full mx-auto" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-6 xl:pt-10">
-  {service.moreservices?.map((dt, i) => (
-    <div
-      className="grid grid-cols-1 md:grid-cols-5 gap-5 rounded-3xl border border-gray-400 p-5"
-      key={i}
-    >
-      <div className="md:col-span-2 relative rounded-2xl overflow-hidden aspect-video w-full md:aspect-square">
-        <Image className="object-cover" fill src={dt.img} alt={dt.title} />
-      </div>
-      <div className="md:col-span-3 flex flex-col gap-3 justify-between h-full">
-        <div className="flex flex-col justify-center gap-2 h-full">
-          <h1 className="text-2xl font-medium">{dt.title}</h1>
-          <p className="text-sm">{dt.description}</p>
+          {subServices?.map((dt, i) => (
+            <div
+              className="grid grid-cols-1 md:grid-cols-5 gap-5 rounded-3xl border border-gray-400 p-5"
+              key={i}
+            >
+              <div className="md:col-span-2 relative rounded-2xl overflow-hidden aspect-video w-full md:aspect-square">
+                {dt.img && <Image className="object-cover" fill src={dt.img} alt={dt.title} />}
+              </div>
+              <div className="md:col-span-3 flex flex-col gap-3 justify-between h-full">
+                <div className="flex flex-col justify-center gap-2 h-full">
+                  <h1 className="text-2xl font-medium">{dt.title}</h1>
+                  <p className="text-sm">{dt.description || dt.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    </div>
-  ))}
-</div>
 
       </section>
     </>
